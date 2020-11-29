@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="edit_pane" prefHeight="555.0" prefWidth="395.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="familytree.EditDetailsFXMLController">
+   <children>
+      <Label fx:id="edit_details_title" layoutX="20.0" layoutY="21.0" text="Edit Details">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="77.0" text="Name:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="114.0" text="Surname:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="184.0" text="LifeDescription:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name_field" layoutX="119.0" layoutY="73.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="surname_field" layoutX="119.0" layoutY="110.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="life_description_field" layoutX="119.0" layoutY="180.0" prefHeight="80.0" prefWidth="270.0" />
+      <ComboBox fx:id="gender_combo_box" layoutX="119.0" layoutY="146.0" prefHeight="25.0" prefWidth="270.0" />
+      <Label layoutX="23.0" layoutY="290.0" text="Address:">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="150.0" text="Gender:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="339.0" text="Street No:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="376.0" text="Street Name:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="446.0" text="Postal Code:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="412.0" text="City:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="streetno_field" layoutX="119.0" layoutY="331.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="streetname_field" layoutX="119.0" layoutY="368.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="city_field" layoutX="119.0" layoutY="401.0" prefHeight="25.0" prefWidth="270.0" />
+      <TextField fx:id="postal_code_field" layoutX="119.0" layoutY="438.0" prefHeight="25.0" prefWidth="270.0" />
+      <Button fx:id="save_details" layoutX="246.0" layoutY="488.0" mnemonicParsing="false" onAction="#saveDetails" text="Save Details" />
+      <Button layoutX="337.0" layoutY="488.0" mnemonicParsing="false" onAction="#cancelEditing" text="Cancel" />
+   </children>
+</AnchorPane>

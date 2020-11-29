@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="view_pane" prefHeight="555.0" prefWidth="395.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="familytree.ViewDetailsFXMLController">
+   <children>
+      <Label layoutX="24.0" layoutY="26.0" text="Member Information">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="77.0" text="Personal:">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="265.0" text="Address:">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="346.0" text="Relatives:">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="109.0" text="Name:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="135.0" text="Surname:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="162.0" text="Gender:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="191.0" text="LifeDescription:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_label" layoutX="111.0" layoutY="109.0" text="&quot;name&quot;" />
+      <Label fx:id="surname_label" layoutX="111.0" layoutY="135.0" text="&quot;surname&quot;" />
+      <Label fx:id="gender_label" layoutX="111.0" layoutY="162.0" text="&quot;gender&quot;" />
+      <Label fx:id="description_label" alignment="TOP_LEFT" layoutX="111.0" layoutY="191.0" prefHeight="56.0" prefWidth="261.0" text="&quot;description&quot;" wrapText="true" />
+      <Label layoutX="28.0" layoutY="384.0" text="Father:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="address_label" alignment="TOP_LEFT" layoutX="111.0" layoutY="265.0" prefHeight="56.0" prefWidth="261.0" text="&quot;description&quot;" wrapText="true" />
+      <Label layoutX="28.0" layoutY="412.0" text="Mother:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="443.0" text="Spouse:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="472.0" text="Children:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="502.0" text="GrandChilds:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="father_label" layoutX="111.0" layoutY="384.0" text="&quot;father&quot;" />
+      <Label fx:id="mother_label" layoutX="111.0" layoutY="412.0" text="&quot;mother&quot;" />
+      <Label fx:id="spouse_label" layoutX="111.0" layoutY="443.0" text="&quot;spouse&quot;" />
+      <Label fx:id="children_label" layoutX="111.0" layoutY="472.0" text="&quot;children&quot;" />
+      <Label fx:id="grand_children_label" layoutX="111.0" layoutY="502.0" text="&quot;grand-children&quot;" />
+      <Button layoutX="216.0" layoutY="519.0" mnemonicParsing="false" onAction="#editDetails" text="Edit Details" />
+      <Button layoutX="299.0" layoutY="519.0" mnemonicParsing="false" onAction="#addRelative" text="Add Relative" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
